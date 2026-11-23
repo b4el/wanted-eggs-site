@@ -46,6 +46,7 @@ def page(slug: str, title: str, body: str) -> None:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow, noai, noimageai">
 <title>{html.escape(title)} · Wanted Eggs</title>
 <meta name="description" content="Wanted Eggs: segredos, glitches e builds de jogos descobertos e votados pela comunidade.">
 <link rel="icon" href="favicon.png">
@@ -79,7 +80,7 @@ page('index', 'Início', f"""
   <div class="box"><b>🔥 Meta</b>Builds com print, código para importar e hype da galera.</div>
   <div class="box"><b>⭐ Patentes</b>Suba de Novato a Procurado 5 Estrelas.</div>
 </div>
-<div class="box accent">O app está em fase de testes e chega primeiro ao Android. Quer testar antes? Escreva para <a href="mailto:{CONTATO}">{CONTATO}</a>.</div>
+<div class="box accent">O app está em fase de testes fechados. Quer participar? Escreva para <a href="mailto:{CONTATO}">{CONTATO}</a>.</div>
 """)
 
 # ------------------------------------------------------------------ Termos
