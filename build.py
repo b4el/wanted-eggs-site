@@ -6,7 +6,7 @@ import html
 
 CONTATO = 'wantedeggs.app@gmail.com'
 RESPONSAVEL = 'Gabriel'
-ATUALIZADO = '23 de novembro de 2026'
+ATUALIZADO = '24 de novembro de 2026'
 
 CSS = """
 :root{--bg:#0E0E12;--card:#17171D;--border:#2A2A33;--text:#F4F1EA;--muted:#A9A6B2;--accent:#FF8A1F;--gold:#FFC531}
@@ -160,11 +160,14 @@ page('privacidade', 'Política de Privacidade', f"""
 </table>
 <p><b>Fotos:</b> antes do envio, o próprio app reduz e regrava a imagem no seu aparelho, removendo metadados como a localização (GPS).</p>
 <p>Não coletamos sua localização, contatos, senha de jogos ou dados de pagamento. Hoje o app não usa ferramentas de anúncio nem de rastreamento.</p>
+<p><b>Vídeos:</b> posts podem ter link de vídeo do YouTube, TikTok ou Instagram. Nada dessas plataformas é carregado até você tocar em “Assistir”. A partir daí o vídeo é exibido pelo player da própria plataforma (no YouTube, no modo de privacidade reforçada), que pode coletar dados conforme a política de privacidade dela.</p>
 
 <h2>3. Com quem compartilhamos</h2>
 <ul>
 <li><b>Supabase</b> (hospedagem do banco de dados, arquivos e login), com servidores na região de São Paulo, Brasil.</li>
-<li><b>Google (Gmail)</b>, usado apenas para enviar o e-mail com o código de login.</li>
+<li><b>Google (Gmail)</b>, usado para enviar o e-mail com o código de login.</li>
+<li><b>Google (Entrar com o Google)</b>, se você escolher entrar com a sua conta Google: recebemos só o seu e-mail e a confirmação da conta. Seu nome e sua foto do Google não são usados.</li>
+<li><b>Cloudflare Turnstile</b>, verificação contra robôs na hora de pedir o código de login. Ela analisa sinais do navegador e do aparelho para saber se é uma pessoa.</li>
 <li><b>Expo</b>, plataforma usada para construir e atualizar o app.</li>
 <li>Autoridades, quando houver ordem judicial ou obrigação legal.</li>
 </ul>
